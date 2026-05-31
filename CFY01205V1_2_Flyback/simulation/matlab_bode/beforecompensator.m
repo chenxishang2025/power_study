@@ -1,0 +1,22 @@
+Lp=256.622E-6;
+Vout=12;
+Pout=60;
+Rload=Vout*Vout/Pout;
+Nps=30/4;
+Nps1=1/Nps;
+D=0.485;
+Rsense=0.2;
+Esr=5E-3;
+Cout=1.88E-3;
+wz=1/Esr/Cout;
+wrz=Rload*(1-D)*(1-D)/Nps1/Nps1/D/Lp;
+wp=(1+D)/Rload/Cout;
+Ak=1/3;
+s=tf('s');
+Gvv=Ak*Rload*Nps*(1-D)*(1+s/wz)*(1-s/wrz)/(1+D)/Rsense/(1+s/wp)
+w=logspace(1,7);
+p=bodeoptions;
+p.PhaseVisible='on';
+p.FreqUnits='Hz';
+margin(Gvv);
+grid on;

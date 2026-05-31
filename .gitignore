@@ -1,18 +1,30 @@
 # Keil / MDK build outputs
-MDK-ARM/CBB024D-V1.0/
-MDK-ARM/*.lst
-MDK-ARM/*.dep
-MDK-ARM/*.lnp
-MDK-ARM/*.map
-MDK-ARM/*.htm
-MDK-ARM/*.build_log.htm
-MDK-ARM/*.hex
-MDK-ARM/*.axf
-MDK-ARM/*.elf
-MDK-ARM/*.bin
-MDK-ARM/*.o
-MDK-ARM/*.d
-MDK-ARM/*.crf
+**/MDK-ARM/CBB024D-V1.0/
+**/MDK-ARM/*.lst
+**/MDK-ARM/*.dep
+**/MDK-ARM/*.lnp
+**/MDK-ARM/*.map
+**/MDK-ARM/*.htm
+**/MDK-ARM/*.build_log.htm
+**/MDK-ARM/*.hex
+**/MDK-ARM/*.axf
+**/MDK-ARM/*.elf
+**/MDK-ARM/*.bin
+**/MDK-ARM/*.o
+**/MDK-ARM/*.d
+**/MDK-ARM/*.crf
+
+# TI CCS build outputs
+**/Debug/
+**/Release/
+**/optimizerAssistant/
+*.obj
+*.out
+*.map
+*.d
+*.mk
+*.opt
+*_linkInfo.xml
 
 # Keil user/session files
 *.uvguix.*
@@ -21,11 +33,21 @@ MDK-ARM/*.crf
 *.uvoptx.bak
 
 # Unused CMSIS packages/examples for this Keil target
-Drivers/CMSIS/DSP/
-Drivers/CMSIS/NN/
-Drivers/CMSIS/RTOS/
-Drivers/CMSIS/RTOS2/
-Drivers/CMSIS/docs/
+**/Drivers/CMSIS/DSP/
+**/Drivers/CMSIS/NN/
+**/Drivers/CMSIS/RTOS/
+**/Drivers/CMSIS/RTOS2/
+**/Drivers/CMSIS/docs/
+
+# Large/generated simulation and installer artifacts
+*.smv
+*.mp4
+*.avi
+*.msi
+*.exe
+*.cab
+*.zip
+*.Zip
 
 # OS/editor files
 .DS_Store
