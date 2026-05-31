@@ -1,0 +1,33 @@
+# Keil / MDK build outputs
+MDK-ARM/CBB024D-V1.0/
+MDK-ARM/*.lst
+MDK-ARM/*.dep
+MDK-ARM/*.lnp
+MDK-ARM/*.map
+MDK-ARM/*.htm
+MDK-ARM/*.build_log.htm
+MDK-ARM/*.hex
+MDK-ARM/*.axf
+MDK-ARM/*.elf
+MDK-ARM/*.bin
+MDK-ARM/*.o
+MDK-ARM/*.d
+MDK-ARM/*.crf
+
+# Keil user/session files
+*.uvguix.*
+*.uvgui.*
+*.uvopt
+*.uvoptx.bak
+
+# Unused CMSIS packages/examples for this Keil target
+Drivers/CMSIS/DSP/
+Drivers/CMSIS/NN/
+Drivers/CMSIS/RTOS/
+Drivers/CMSIS/RTOS2/
+Drivers/CMSIS/docs/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
